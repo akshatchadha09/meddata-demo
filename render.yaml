@@ -1,4 +1,3 @@
-startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
 services:
   - type: web
     name: meddata-demo
