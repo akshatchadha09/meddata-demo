@@ -1,1 +1,32 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MedData · Login</title>
+<link rel="stylesheet" href="/static/style.css?v=meddata-final-light-2">
+</head>
+<body>
+<div class="login-overlay" style="min-height:100vh">
+  <div class="login-card">
+    <div class="brand dark">MedData <span>AI</span></div>
+    <div class="login-kicker">Unified public healthcare intelligence</div>
+    <h1>One network. One operating view.</h1>
+    <p class="muted">Demo environment using synthetic healthcare data. Sign in or choose a role to explore the complete workflow.</p>
+    <form class="login-form" method="post" action="/web-login">
+      <label>Email<input name="email" type="email" placeholder="name@example.com" required autocomplete="username"></label>
+      <label>Password<input name="password" type="password" placeholder="Password" required autocomplete="current-password"></label>
+      <button class="primary wide" type="submit">Sign in</button>
+    </form>
+    <div class="demo-users">
+      <a href="/demo-login/GOVERNMENT">Government</a>
+      <a href="/demo-login/DISTRICT">District</a>
+      <a href="/demo-login/PHC">PHC</a>
+      <a href="/demo-login/SUPPLIER">Supplier</a>
+    </div>
+    <div class="login-note">Prototype • synthetic data • local-only demo</div>
+    <div class="login-status">Server-side login enabled</div>
+  </div>
+</div>
+</body>
+</html>
